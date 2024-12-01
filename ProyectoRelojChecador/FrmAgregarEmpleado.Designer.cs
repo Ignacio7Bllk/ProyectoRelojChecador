@@ -50,7 +50,6 @@
             // 
             // dataGridViewAgregarEmp
             // 
-            this.dataGridViewAgregarEmp.BackgroundColor = System.Drawing.Color.Thistle;
             this.dataGridViewAgregarEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAgregarEmp.Location = new System.Drawing.Point(425, 33);
             this.dataGridViewAgregarEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -63,12 +62,12 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.LavenderBlush;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(26, 24);
+            this.label7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(56, 23);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(373, 29);
+            this.label7.Size = new System.Drawing.Size(264, 20);
             this.label7.TabIndex = 28;
             this.label7.Text = "INFORMACION DEL EMPLEADO";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -191,14 +190,13 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.Violet;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(205, 362);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(115, 48);
             this.btnRegistrar.TabIndex = 33;
             this.btnRegistrar.Text = "Agregar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.buttonAgar_Click);
             // 
             // comboBoxTurno
@@ -239,7 +237,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1022, 429);
             this.Controls.Add(this.comboBoxSex);
             this.Controls.Add(this.label8);

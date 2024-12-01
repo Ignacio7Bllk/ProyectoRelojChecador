@@ -54,11 +54,10 @@
             // 
             // btnRegistroChecadas
             // 
-            this.btnRegistroChecadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroChecadas.ForeColor = System.Drawing.Color.Purple;
-            this.btnRegistroChecadas.Location = new System.Drawing.Point(17, 380);
+            this.btnRegistroChecadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroChecadas.Location = new System.Drawing.Point(326, 354);
             this.btnRegistroChecadas.Name = "btnRegistroChecadas";
-            this.btnRegistroChecadas.Size = new System.Drawing.Size(233, 70);
+            this.btnRegistroChecadas.Size = new System.Drawing.Size(171, 70);
             this.btnRegistroChecadas.TabIndex = 35;
             this.btnRegistroChecadas.Text = "Registro Checadas";
             this.btnRegistroChecadas.UseVisualStyleBackColor = true;
@@ -66,11 +65,10 @@
             // 
             // btnBuscarEmpleado
             // 
-            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnBuscarEmpleado.ForeColor = System.Drawing.Color.Purple;
-            this.btnBuscarEmpleado.Location = new System.Drawing.Point(26, 305);
+            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(326, 102);
             this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
-            this.btnBuscarEmpleado.Size = new System.Drawing.Size(109, 69);
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(171, 69);
             this.btnBuscarEmpleado.TabIndex = 34;
             this.btnBuscarEmpleado.Text = "Buscar Empleado";
             this.btnBuscarEmpleado.UseVisualStyleBackColor = true;
@@ -78,12 +76,12 @@
             // 
             // btnAgregarEmpleado
             // 
-            this.btnAgregarEmpleado.BackColor = System.Drawing.Color.Thistle;
-            this.btnAgregarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAgregarEmpleado.ForeColor = System.Drawing.Color.Purple;
-            this.btnAgregarEmpleado.Location = new System.Drawing.Point(26, 190);
+            this.btnAgregarEmpleado.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnAgregarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEmpleado.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAgregarEmpleado.Location = new System.Drawing.Point(326, 12);
             this.btnAgregarEmpleado.Name = "btnAgregarEmpleado";
-            this.btnAgregarEmpleado.Size = new System.Drawing.Size(109, 100);
+            this.btnAgregarEmpleado.Size = new System.Drawing.Size(171, 69);
             this.btnAgregarEmpleado.TabIndex = 33;
             this.btnAgregarEmpleado.Text = "Agregar Empleado";
             this.btnAgregarEmpleado.UseVisualStyleBackColor = false;
@@ -92,29 +90,30 @@
             // etiquetaFecha
             // 
             this.etiquetaFecha.AutoSize = true;
-            this.etiquetaFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.etiquetaFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaFecha.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.etiquetaFecha.Location = new System.Drawing.Point(36, 117);
+            this.etiquetaFecha.Location = new System.Drawing.Point(102, 66);
             this.etiquetaFecha.Name = "etiquetaFecha";
-            this.etiquetaFecha.Size = new System.Drawing.Size(159, 58);
+            this.etiquetaFecha.Size = new System.Drawing.Size(109, 39);
             this.etiquetaFecha.TabIndex = 32;
             this.etiquetaFecha.Text = "label1";
             // 
             // etiquetaIntroducir
             // 
             this.etiquetaIntroducir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.etiquetaIntroducir.Location = new System.Drawing.Point(257, 137);
+            this.etiquetaIntroducir.Location = new System.Drawing.Point(39, 112);
             this.etiquetaIntroducir.Name = "etiquetaIntroducir";
             this.etiquetaIntroducir.Size = new System.Drawing.Size(270, 38);
             this.etiquetaIntroducir.TabIndex = 30;
             this.etiquetaIntroducir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.etiquetaIntroducir.Click += new System.EventHandler(this.etiquetaIntroducir_Click);
             // 
             // btnOk
             // 
             this.btnOk.BackColor = System.Drawing.SystemColors.InfoText;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOk.Location = new System.Drawing.Point(444, 392);
+            this.btnOk.Location = new System.Drawing.Point(226, 365);
             this.btnOk.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(83, 59);
@@ -126,7 +125,7 @@
             // btnCero
             // 
             this.btnCero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCero.Location = new System.Drawing.Point(351, 391);
+            this.btnCero.Location = new System.Drawing.Point(133, 365);
             this.btnCero.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnCero.Name = "btnCero";
             this.btnCero.Size = new System.Drawing.Size(83, 59);
@@ -140,7 +139,7 @@
             this.btnBorrar.BackColor = System.Drawing.SystemColors.InfoText;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBorrar.Location = new System.Drawing.Point(258, 391);
+            this.btnBorrar.Location = new System.Drawing.Point(40, 365);
             this.btnBorrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(83, 59);
@@ -151,8 +150,8 @@
             // 
             // btnNueve
             // 
-            this.btnNueve.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnNueve.Location = new System.Drawing.Point(444, 324);
+            this.btnNueve.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNueve.Location = new System.Drawing.Point(226, 298);
             this.btnNueve.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnNueve.Name = "btnNueve";
             this.btnNueve.Size = new System.Drawing.Size(83, 59);
@@ -163,8 +162,8 @@
             // 
             // btnOcho
             // 
-            this.btnOcho.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnOcho.Location = new System.Drawing.Point(351, 324);
+            this.btnOcho.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcho.Location = new System.Drawing.Point(133, 298);
             this.btnOcho.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnOcho.Name = "btnOcho";
             this.btnOcho.Size = new System.Drawing.Size(83, 59);
@@ -175,8 +174,8 @@
             // 
             // btnSiete
             // 
-            this.btnSiete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnSiete.Location = new System.Drawing.Point(258, 324);
+            this.btnSiete.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiete.Location = new System.Drawing.Point(40, 298);
             this.btnSiete.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSiete.Name = "btnSiete";
             this.btnSiete.Size = new System.Drawing.Size(83, 59);
@@ -187,8 +186,8 @@
             // 
             // btnSeis
             // 
-            this.btnSeis.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnSeis.Location = new System.Drawing.Point(444, 257);
+            this.btnSeis.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeis.Location = new System.Drawing.Point(226, 231);
             this.btnSeis.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSeis.Name = "btnSeis";
             this.btnSeis.Size = new System.Drawing.Size(83, 59);
@@ -199,8 +198,8 @@
             // 
             // btnCinco
             // 
-            this.btnCinco.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnCinco.Location = new System.Drawing.Point(351, 257);
+            this.btnCinco.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCinco.Location = new System.Drawing.Point(133, 231);
             this.btnCinco.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnCinco.Name = "btnCinco";
             this.btnCinco.Size = new System.Drawing.Size(83, 59);
@@ -211,8 +210,8 @@
             // 
             // btnCuatro
             // 
-            this.btnCuatro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnCuatro.Location = new System.Drawing.Point(258, 257);
+            this.btnCuatro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCuatro.Location = new System.Drawing.Point(40, 231);
             this.btnCuatro.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnCuatro.Name = "btnCuatro";
             this.btnCuatro.Size = new System.Drawing.Size(83, 59);
@@ -223,8 +222,8 @@
             // 
             // btnTres
             // 
-            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnTres.Location = new System.Drawing.Point(444, 190);
+            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTres.Location = new System.Drawing.Point(226, 164);
             this.btnTres.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(83, 59);
@@ -235,8 +234,8 @@
             // 
             // btnDos
             // 
-            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnDos.Location = new System.Drawing.Point(351, 190);
+            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDos.Location = new System.Drawing.Point(133, 164);
             this.btnDos.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(83, 59);
@@ -247,8 +246,8 @@
             // 
             // btnUno
             // 
-            this.btnUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.btnUno.Location = new System.Drawing.Point(258, 190);
+            this.btnUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUno.Location = new System.Drawing.Point(40, 164);
             this.btnUno.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnUno.Name = "btnUno";
             this.btnUno.Size = new System.Drawing.Size(83, 59);
@@ -265,22 +264,21 @@
             // etiquetaHora
             // 
             this.etiquetaHora.AutoSize = true;
-            this.etiquetaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.etiquetaHora.ForeColor = System.Drawing.Color.Purple;
-            this.etiquetaHora.Location = new System.Drawing.Point(30, 21);
+            this.etiquetaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.etiquetaHora.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.etiquetaHora.Location = new System.Drawing.Point(82, 19);
             this.etiquetaHora.Name = "etiquetaHora";
-            this.etiquetaHora.Size = new System.Drawing.Size(249, 91);
+            this.etiquetaHora.Size = new System.Drawing.Size(173, 63);
             this.etiquetaHora.TabIndex = 36;
             this.etiquetaHora.Text = "label1";
             this.etiquetaHora.Click += new System.EventHandler(this.etiquetaHora_Click);
             // 
             // btnModificarEmpleado
             // 
-            this.btnModificarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnModificarEmpleado.ForeColor = System.Drawing.Color.Purple;
-            this.btnModificarEmpleado.Location = new System.Drawing.Point(141, 305);
+            this.btnModificarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarEmpleado.Location = new System.Drawing.Point(326, 190);
             this.btnModificarEmpleado.Name = "btnModificarEmpleado";
-            this.btnModificarEmpleado.Size = new System.Drawing.Size(109, 69);
+            this.btnModificarEmpleado.Size = new System.Drawing.Size(171, 69);
             this.btnModificarEmpleado.TabIndex = 37;
             this.btnModificarEmpleado.Text = "Modificar Empleado";
             this.btnModificarEmpleado.UseVisualStyleBackColor = true;
@@ -288,11 +286,10 @@
             // 
             // btnEliminarEmpleado
             // 
-            this.btnEliminarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarEmpleado.ForeColor = System.Drawing.Color.Purple;
-            this.btnEliminarEmpleado.Location = new System.Drawing.Point(141, 190);
+            this.btnEliminarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarEmpleado.Location = new System.Drawing.Point(326, 278);
             this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
-            this.btnEliminarEmpleado.Size = new System.Drawing.Size(109, 100);
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(171, 70);
             this.btnEliminarEmpleado.TabIndex = 38;
             this.btnEliminarEmpleado.Text = "Eliminar Empleado";
             this.btnEliminarEmpleado.UseVisualStyleBackColor = true;
@@ -302,8 +299,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(546, 460);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(524, 438);
             this.Controls.Add(this.btnEliminarEmpleado);
             this.Controls.Add(this.btnModificarEmpleado);
             this.Controls.Add(this.etiquetaHora);

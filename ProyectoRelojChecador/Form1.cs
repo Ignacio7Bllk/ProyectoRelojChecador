@@ -87,7 +87,6 @@ namespace ProyectoRelojChecador
             }
         }
         /*
-        // Primera version
         private void btnOk_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(etiquetaIntroducir.Text))
@@ -170,72 +169,6 @@ namespace ProyectoRelojChecador
             }
         }
 
-        *//*
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(etiquetaIntroducir.Text))
-            {
-                if (int.TryParse(etiquetaIntroducir.Text, out int idBtnOk))
-                {
-                    TimeSpan horaActual = DateTime.Now.TimeOfDay;
-                    DateTime fechaActual = DateTime.Now.Date;
-
-                    if (EmpleadoQuery.buscarEmpleado(idBtnOk) != 0)
-                    {
-                        using (SqlConnection conexion = BDPrincipal.obtenerConexion())
-                        {
-                            string queryTurno = @"
-                        SELECT T.HORA_ENTRADA, T.HORA_SALIDA, T.HORA_COMIDA_INICIO, T.HORA_COMIDA_FIN
-                        FROM TURNOS T
-                        INNER JOIN EMPLEADO E ON E.ID_TURNO = T.ID_TURNO
-                        WHERE E.ID_EMPLEADO_TE = @idEmpleado;";
-
-                            SqlCommand comandoTurno = new SqlCommand(queryTurno, conexion);
-                            comandoTurno.Parameters.AddWithValue("@idEmpleado", idBtnOk);
-
-                            SqlDataReader reader = comandoTurno.ExecuteReader();
-                            if (reader.Read())
-                            {
-                                TimeSpan horaEntradaTurno = reader.GetTimeSpan(0);
-                                TimeSpan horaSalidaTurno = reader.GetTimeSpan(1);
-                                TimeSpan horaInicioComidaTurno = reader.GetTimeSpan(2);
-                                TimeSpan horaFinComidaTurno = reader.GetTimeSpan(3);
-                                reader.Close();
-
-                                int registroExito = ChecadaQuery.AgregarChecada(idBtnOk, horaActual, fechaActual, horaEntradaTurno, horaSalidaTurno, horaInicioComidaTurno, horaFinComidaTurno);
-
-                                if (registroExito != 0)
-                                {
-                                    MessageBox.Show("Checada registrada exitosamente.");
-                                    etiquetaIntroducir.Text = "";
-                                }
-                                else
-                                {
-                                    MessageBox.Show("No se pudo registrar la checada.");
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("El empleado no tiene un turno asignado.");
-                            }
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Digita nuevamente el ID.");
-                        etiquetaIntroducir.Text = "";
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("El ID ingresado no es válido.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Introduce tu ID por favor.");
-            }
-        }
         */
         private void btnOk_Click(object sender, EventArgs e)
         {
@@ -312,11 +245,10 @@ namespace ProyectoRelojChecador
 
 
 
-
         private void TimerHoraFecha_Tick(object sender, EventArgs e)
         {
             etiquetaHora.Text = DateTime.Now.ToString("HH:mm:ss");
-            etiquetaFecha.Text = DateTime.Now.ToString("ddd d MMM y");
+            etiquetaFecha.Text = DateTime.Now.ToShortDateString();
         }
 
         //BONTONES QUE TE LLEVANA OTRO WINDOWS FORM
@@ -352,6 +284,11 @@ namespace ProyectoRelojChecador
         }
 
         private void etiquetaHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void etiquetaIntroducir_Click(object sender, EventArgs e)
         {
 
         }
